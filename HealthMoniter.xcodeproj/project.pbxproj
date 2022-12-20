@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256A82C8294B718D005DA7AC /* homeListButtonOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256A82C7294B718D005DA7AC /* homeListButtonOne.swift */; };
+		256A82CB294B7FF7005DA7AC /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 256A82CA294B7FF7005DA7AC /* SwiftUICharts */; };
+		53558EA0294264D500ECD966 /* profileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53558E9F294264D500ECD966 /* profileScreen.swift */; };
+		53558EC52949007D00ECD966 /* settingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53558EC42949007D00ECD966 /* settingsScreen.swift */; };
 		53B8350D292BFBC0003259E2 /* HealthMoniterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B8350C292BFBC0003259E2 /* HealthMoniterApp.swift */; };
 		53B8350F292BFBC0003259E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B8350E292BFBC0003259E2 /* ContentView.swift */; };
 		53B83511292BFBC2003259E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B83510292BFBC2003259E2 /* Assets.xcassets */; };
 		53B83514292BFBC2003259E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53B83513292BFBC2003259E2 /* Preview Assets.xcassets */; };
+		53B8351B292C02BB003259E2 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B8351A292C02BB003259E2 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		256A82C7294B718D005DA7AC /* homeListButtonOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeListButtonOne.swift; sourceTree = "<group>"; };
+		53558E9F294264D500ECD966 /* profileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileScreen.swift; sourceTree = "<group>"; };
+		53558EC42949007D00ECD966 /* settingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsScreen.swift; sourceTree = "<group>"; };
 		53B83509292BFBC0003259E2 /* HealthMoniter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthMoniter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B8350C292BFBC0003259E2 /* HealthMoniterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMoniterApp.swift; sourceTree = "<group>"; };
-		53B8350E292BFBC0003259E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		53B8350E292BFBC0003259E2 /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		53B83510292BFBC2003259E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53B83513292BFBC2003259E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		53B8351A292C02BB003259E2 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256A82CB294B7FF7005DA7AC /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +63,10 @@
 			children = (
 				53B8350C292BFBC0003259E2 /* HealthMoniterApp.swift */,
 				53B8350E292BFBC0003259E2 /* ContentView.swift */,
+				256A82C7294B718D005DA7AC /* homeListButtonOne.swift */,
+				53558E9F294264D500ECD966 /* profileScreen.swift */,
+				53558EC42949007D00ECD966 /* settingsScreen.swift */,
+				53B8351A292C02BB003259E2 /* ColorExtension.swift */,
 				53B83510292BFBC2003259E2 /* Assets.xcassets */,
 				53B83512292BFBC2003259E2 /* Preview Content */,
 			);
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = HealthMoniter;
+			packageProductDependencies = (
+				256A82CA294B7FF7005DA7AC /* SwiftUICharts */,
+			);
 			productName = HealthMoniter;
 			productReference = 53B83509292BFBC0003259E2 /* HealthMoniter.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 53B83500292BFBC0003259E2;
+			packageReferences = (
+				256A82C9294B7FF7005DA7AC /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+			);
 			productRefGroup = 53B8350A292BFBC0003259E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53B8351B292C02BB003259E2 /* ColorExtension.swift in Sources */,
 				53B8350F292BFBC0003259E2 /* ContentView.swift in Sources */,
+				53558EC52949007D00ECD966 /* settingsScreen.swift in Sources */,
+				256A82C8294B718D005DA7AC /* homeListButtonOne.swift in Sources */,
 				53B8350D292BFBC0003259E2 /* HealthMoniterApp.swift in Sources */,
+				53558EA0294264D500ECD966 /* profileScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		256A82C9294B7FF7005DA7AC /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mecid/SwiftUICharts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		256A82CA294B7FF7005DA7AC /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 256A82C9294B7FF7005DA7AC /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 53B83501292BFBC0003259E2 /* Project object */;
 }
